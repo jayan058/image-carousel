@@ -7,7 +7,7 @@ const images = document.querySelectorAll('.carousel-slide img');
 if (carouselSlide instanceof HTMLElement) {
     carouselSlide.style.width='80%'
     carouselSlide.style.height='80%'
-    
+    carouselSlide.style.boxShadow = '0 4px 8px rgba(0, 0, 0, 0.9)';
     // Grabbing all images inside the carousel-slide element
     const images = carouselSlide.getElementsByTagName('img');
   
@@ -20,6 +20,7 @@ if (carouselSlide instanceof HTMLElement) {
         image.style.height = '100%'; // Change this to your desired height
         image.style.background='cover'
          image.style.minWidth='600px'
+    
        
     }
 } else {
