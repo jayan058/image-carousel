@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+
+
+.topic {
+    font-family: cursive;
+    max-width: max-content;
+    margin: 20px auto;
+    font-weight: bolder;
+    font-size: 40px;
+    text-align: center;
+}
+
+.carousel-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 90vw;
+    height: 80vh;
+    margin: auto;
+    position: relative;
+}
+
+.carousel-slide {
+    width: 100%;
+    height: 80%;
+    overflow: hidden;
+    position: relative;
+        
+}
+
+.carousel-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: none;   
+}
+
+.selection-buttons {
+    display: flex;
+    position: absolute;
+    width: 120%;
+    top: 50%;
+    transform: translateY(-50%);
+    justify-content: space-between;
+}
+
+i {
+    cursor: pointer;
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 20px;
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+.icon:hover {
+    background-color: rgba(227, 227, 227, 0.9);
+}
+
+@media (max-width: 806px) {
+    .topic {
+        font-size: 30px;
+    }
+
+    .icon {
+        font-size: 20px;
+        padding: 15px;
+    }
+    img{
+        object-fit: contain;
+    }
+}
+
+@media(max-width:544px){
+    .image-one{
+        object-position: 250% 80%;
+    }
+    .image-three{
+        object-position: 100% 80%;
+    }
+    .image-four{
+        object-position: 15% 80%;
+    }
+    .image-five{
+        object-position: 80% 80%;
+    }
+    
+}
+
+@keyframes fade{
+    from {opacity: .2}
+    to{opacity: 10;}
+}
+.animation{
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+.dot {
+    height: 10px;
+    width: 10px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.active {
+    background-color: #717171;
+}
+.dots-container {
+    margin-top: 50px;
+}
+
