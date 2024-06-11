@@ -79,7 +79,7 @@ i {
 
 @media(max-width:544px){
     .image-one{
-        object-position: 250% 80%;
+        object-position: 225% 80%;
     }
     .image-three{
         object-position: 100% 80%;
@@ -89,6 +89,9 @@ i {
     }
     .image-five{
         object-position: 80% 80%;
+    }
+    .image-six{
+        object-position: 100% 80%;
     }
     
 }
